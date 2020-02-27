@@ -1,34 +1,90 @@
 <!-- Sakshat Bhattarai -->
 <!-- Homepage for my personal website.-->
-<html>
-<head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-157956578-1"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
 
-	  gtag('config', 'UA-157956578-1');
-	</script>
-	<meta name="viewport" content="width=device-width">
-	<link rel='stylesheet' href='home.css'>
-	<!-- Title -->	
-	<title>Sakshat Bhattarai</title>	
-</head>
-<body>
-  <div class='row'>	  
-	  <div class='left'>
-		<h1>Hi! I am Sakshat.</h1>
-		<h2>Welcome to my website.</h2> 		 
-		<p>Here's a picture of me and my friends after we completed the hike to Thorangla Pass:</p>
-		<img src="./image1.JPG" alt="Thorangla Pass" width="40%">
-		<br><p>Thorangla Pass is a mountain pass with an elevation of 5,416 meters (17,769 ft) above sea level in the north of the Annapurna Himal in central Nepal. Thorangla is the highest point on the famous Annapurna Circuit, a 300 km (190 mi) route around the Annapurna mountain range. The pass is located on a trail which connects Manang district to the east with the Mustang district to the west.</p>
-	  </div>	  
-	  <div class='right'>
-		<a href='http://swe645.bsakshat.com'><b>SWE645 Spring 2020</b></a>
-	  </div>
-	  
-  </div>
-</body>
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-157956578-1"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-157956578-1');
+		</script>
+		<title>Sakshat Bhattarai</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<style>
+		body,h1,h2,h3,h4,h5,h6 {font-family: "Rubik", sans-serif; color: black;}
+		body, html {
+		height: 100%;
+		color: #777;
+		line-height: 1.8;
+		}
+
+		/* Create a Parallax Effect */
+		.bgimg-1, .bgimg-2, .bgimg-3 {  
+		background-attachment: fixed;
+		background-position: top;
+		background-repeat: no-repeat;
+		background-size: cover;
+		}
+
+		/* First image (Logo. Full height) */
+		.bgimg-1 {
+		background-image: url('mountains1.JPG');
+		height: 100%;
+		min-height: 100%;
+		}
+
+		.fa-linkedin {
+		background: #007bb5;
+		color: white;
+		}
+
+		.w3-hover-opacity {cursor: pointer;}
+
+		/* Turn off parallax scrolling for tablets and phones */
+		@media only screen and (max-device-width: 1600px) {
+		.bgimg-1, .bgimg-2, .bgimg-3 {
+			background-attachment: scroll;
+			min-height: 400px;
+		}
+		}
+		</style>
+	</head>
+	
+	<body>
+		<!-- First Parallax Image with Logo Text -->
+		<div class="bgimg-1 w3-display-container w3-opacity-min w3-hover-opacity-off" id="home">
+			<div class="w3-display-middle" style="white-space:nowrap;">
+			<span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">SAKSHAT <span class="w3-hide-small">BHATTARAI</span></span>
+			</div>
+		</div>
+
+		<!-- Container (Contact Section) -->
+		<div class="w3-content w3-container w3-padding-64"  id="contact">
+			<h3 class="w3-center">Contact</h3> 
+			<div class="w3-center">
+			<i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge"></i> bhattaraisakshat07@gmail.com<br>
+			<div class="w3-xlarge w3-section">      
+				<a href="https://www.linkedin.com/in/sakshatb/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+				<a href="https://github.com/bsakshat" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
+			</div>
+			</div>
+		</div>
+		
+		<!-- Footer -->
+		<footer class="w3-center w3-black w3-padding-64 ">
+			<a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+			
+			<p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+		</footer>	
+	</body>
 </html>
