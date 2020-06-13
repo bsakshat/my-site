@@ -24,9 +24,21 @@ body {
     width: 25%;
     height: 25%;
 }
+#icons {
+    margin-top: 5%;
+    margin-left: 0px;
+}
 ul > li {
     list-style: none;
+    /*display: inline;
+    padding: 0px 15px;*/
+    padding: 10px;
+    position: relative;
+    
 }
 #icons > li > a > img {
     width: 30%;
 }
+ul > li > a > img:hover {
+    transform: scale(1.1);
+  }
