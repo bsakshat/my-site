@@ -1,2 +1,2 @@
 # My Website
-bsakshat.com
+http://www.bsakshat.com
